@@ -9,7 +9,7 @@
            var carnam = 'BMW'
           // console.log(carnam.length);   
     // Q3: Given the string 'Hello World!', log the 6th character.
-  console.log('Hello World'[5])
+ // console.log('Hello World'[5])
   
 // level 2
     // Q4: Given the string 'Welcome World?', replace the question mark with an exclamation
