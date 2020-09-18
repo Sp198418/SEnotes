@@ -16,6 +16,8 @@
     } else {
         // do something else
         console.log('false');
+
+        
     }    
 
 // Primitive Data types:

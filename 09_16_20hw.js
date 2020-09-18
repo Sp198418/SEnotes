@@ -11,6 +11,7 @@
 //var engine = `V6`;
 //var traction = `RWD`;
 
+
 // Write code that converts the following into a city name & a city code MAN54681;Manchester Piccadilly will convert to:
 //var str2 = "Code: MAN54681, City: Manchester Piccadilly";
  //console.log(str2.split(','))
@@ -19,7 +20,7 @@
 //Write code that will convert each of the following. Hint, there is a solution that will convert them all perfectly instead of creating a unique solution for each entry.
  
 //var fulltext1 = "MAN54681;Manchester Piccadilly"
-//console.log(fulltex1.split(';'))
+//console.log(fulltext1.split(';'))
 //var fulltext2 = "GNF6519871681;Greenfield"
 //console.log(fulltext2.split(';'))
 //var fulltext3 = "LIV515;Liverpool"
