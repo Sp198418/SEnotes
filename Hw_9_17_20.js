@@ -26,7 +26,7 @@ Q4:
 //a: Write some code that extrapolates the second word from the string: "My home town.".
 
 //var Live = "My home town"
-//console.log(Live.slice(0,7));
+//console.log(Live.slice(3,7));
 
 //b: Write some code that extrapolates the second word from the string: "Lets eat, Grandpa!".
 
