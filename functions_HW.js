@@ -10,8 +10,9 @@
    
   //  return Math.floor(Math.random() * (max - min) + min)
 // }
-  // console.log(calc(5, 15));
-
+// console.log(calc(5, 15));
+//console.log(calc(5, 15));
+//console.log(calc(5, 15));
  // Problem 2
 
 // Define a variable name and assign your name to it
@@ -23,7 +24,7 @@
 
  //return Captain;
 //}
-//console.log(Captain)
+//console.log(name(Captain)
 
 //Problem 3
 
@@ -38,11 +39,11 @@
 
 //Create a function that returns the type of any argument that is being called in the function
 
-//function greeting(param){
+//function string(paramstr){
 
-//return "Nice to meet you";
+//return typeof str
 //}
-//console.log(greeting());
+//console.log(string(str));
 
 //problem 5
 
@@ -60,15 +61,13 @@
 //function frtTree(fruits){
 //    return  `${fruits}`;
 // }
-// console.log(frtTree(fruits[6]));
+// console.log(frtTree(fruits.length-1));
 
 // Create a function that returns [peach', 'lemon', 'plum', 'grape']
 
 //function frtTree(param){
-    // fruits.shift();
-    // fruits.pop();
-   //  fruits.splice(0, 1);
-  //  return fruits;
+    
+  //  return fruits.fruits.splice(2, -1);
 
 // }
 //console.log(frtTree(fruits));
@@ -76,15 +75,16 @@
 // Create a function that adds another furit to the end of the array and returns the new array
 
 //function frtTree(param){
-  //  fruits.push('Mango');
-  //  return fruits
-// }
+   
+   // fruits.push('Mango');
+   // return fruits
+  //}
 //console.log(frtTree(fruits));
 
 //Create a funciton that returns the string, 'apple and orange and peach and lemon and plum and grape and watermelon
 
 //function frtTree(fruits){
- //   fruits.replace(',').join(' and ');
+ //   fruits arr.join(' and ');
  //   return fruits
 // }
 //console.log(frtTree(fruits));
@@ -107,24 +107,30 @@
 
 // Create a function that returns the string, 'Howdy Sam!'
 
-//function greet(names){
-//    var Newname = names.substr(19, 21);
- //return 'Howdy  (Newname)!'
+//function greet(param){
+ //   param.splice(2, 1,'Sam')
+ ///return `Howdy ${param[2]}!`;
 //}
-//console.log(greet(Newname));
+//console.log(greet(names));
 
 // Problem 7
 
- //var nums = [12, 3, 50, 1, 99, 2]
+ //`var nums = [12, 3, 50, 1, 99, 2]
 
 // Using a while loop, create a funciton that adds every number in the nums array and return the total number
 
-//var x = i;
-//function num(param){
-//  while (x < nums.length) 
- // x++;
+//function total2(){
+  //var i = 0;
+  //var sum = 0
+  //while (i < nums.length){
+   // sum += nums[i];
+   // i++;
+ // }
+ // return sum;
 //}
-//console.log(nums[x]);
+//console.log(total2());
+
+
 // Note: this one is very challenging and requires a little bit of research, but give it shot!
 // And remember to control - c if you log to the terminal and it is running infinitely!
 
