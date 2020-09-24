@@ -26,7 +26,7 @@
        
   //   var output = num.indexOf(arr[i])
 
-  //    console.log(output)
+  //    console.log(Loop Count: ${i})
   //  }
   //       return 'end'
   //   }
@@ -88,21 +88,20 @@
 //var fruittree = ['Apple', 'Banana', 'Orange', 'Peach', 'Strawberry', 'Plum'];
 
 //function capsec(arr){
- //   var capWords = [];
+ // var capWords = [];
 
-  //  for(var i = 0; i < arr.length; i++){
-   //     var ele = arr[i];
+  // for(var i = 0; i < arr.length; i++){
+     //  var ele = arr[i];
 
-  //      var first = ele[1]
-   //     var Seclet = first.toUpperCase();
-        
+   // var secondLet = ele[1].toUpperCase();
+   // var wordArr = ele.split('');
+   //   wordArr[1] = secondLet;
 
-    //    var capitalized = first + Seclet
-//
-  //      capWords.push(capitalized);
-  //  }
-//
-  //  return capWords;
+  //   var capitalized = wordArr.join('');
+   //     capWords.push(capitalized);
+   // }
+
+ //  return capWords;
 //} 
 
 //console.log(capsec(fruittree));
@@ -113,24 +112,27 @@
     // - Input:    ['Shamika Earle', 'Ramsey Lewis', 'Samuel Pierre Louis', 'Wilson Pierre Louis' ]
     // - Output: ['SE', 'RL', 'SPL', 'WPL']
 
-    //var names = ['Shamika Earle', 'Ramsey Lewis', 'Samuel Pierre Louis', 'Wilson Pierre Louis' ]
+  var names = ['Shamika Earle', 'Ramsey Lewis', 'Samuel Pierre Louis', 'Wilson Pierre Louis' ]
 
-   // function name(arr){
-     //    for(var i = 0; i < arr.length; i++){
+   function name(arr){
+    var output = []
+
+       for(var i = 0; i < arr.length; i++){
+          
            
-        //  var output = arr[i]
-          
-       //   var first = output.unshift('SE')
-       //   var second = output.splice(1, 1, 'RL')
-       //   var thrid = output.splice(2, 1, 'SPL')
-       //   var fourth = output.splice(3, 1, 'WPL')
+         var nameSplit = arr[i].split('')
+          var initials = ''
          
          
-        //  var capitalized = first + second + thrid + fourth
-          
-      //      console.log(capitalized)
-       // }
-       //      return 'end'
-       // }
+         for(var j = i; j< nameSplit.length; j++){
+           var currentName = nameSplit[j];
+           var initial = currentName[0]
+           initials = initials + initial
+         }
+         
+         output.push(initials)
+       }
+             return output
+        }
    
-        // console.log(name(names))
+         console.log(name(names))
