@@ -47,7 +47,7 @@
 //             var height = "6'5";
             
 
-//     if(height > "6'5" ){
+//     if(perheight > "6'5" ){
 //         console.log("Taller than Beckham");
 //     }  else if (height == "6'5") {
 //         console.log("Same height as Beckham")
@@ -94,33 +94,58 @@
             // Hint if you're getting stuck refer to last nights assignment in "SEInstructorNotes\Assignments\Day7Loops.js"
 
             
-//             function lstInitial(person){
+    //         function lstInitial(person){
                 
-//             var nameSplt = person['fullName'].split(' ')
+    //         var nameSplt = person['fullName'].split(' ')
             
-//             var name = nameSplt[0]
+    //         var name = nameSplt[0]
             
-//             var initials2 = ''
+    //         var initials2 = ''
 
-//            for(var j = 0; j < nameSplt.length; j++){
+    //        for(var j = 0; j < nameSplt.length; j++){
             
-//             var name = nameSplt[j]
-//             var initial = name[0]
-//             initials2 = initials2 + initial
+    //         var name = nameSplt[j]
+    //         var initial = name[0]
+    //         initials2 = initials2 + initial
             
 
             
-//         }
-//          return  initials2 
-//     }
+    //     }
+    //      return  initials2 
+    // }
     
 
 
 // console.log(lstInitial(person));
-        
+
+// function multiply(a, b){
+//   return  a * b;
+//   }
 
 
+// console(multiply(6, 2))  
+
+
+// function even_or_odd(number) {
+//   return if(number = )
+//   }
+
+//   console.log(even_or_odd(1))
+
+  function even_or_odd(number) {
+           
+    if (number === even){
+      
+     return "Even"
+
+    }else {
+ 
+ return "Odd"
+ 
+ }
+    
+ }
+
+ console.log(even_or_odd(2))
        
-
-
 
