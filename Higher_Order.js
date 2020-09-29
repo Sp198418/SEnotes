@@ -35,33 +35,45 @@
 
             //  Newarr = arr.filter(function(n){return n.length >= 10})
             //  console.log(Newarr)
+// // Level 3
+//     // given an array of objects, filter out any that dont have a key called 'firstName'
+//     let arrOfObjs = [{test:'test'}, {name:'test'}, {test:'test'}, {firstName:'Jess'}];
+//     let noFistName = arrOfObjs.filter(function(obj){return !obj['firstName']});
+//     // console.log(noFistName);
+// // reduce questions 
+// // level 0:
+//     // given an array of numbers add them all together
+//     let sum = arrOfNums.reduce(function(a,n){return a + n})
+//     // console.log(sum);
+// // level 1:
+//     // given an array of numbers, multiply them all together
+//     let mult = arrOfNums.reduce(function(a,n){return a * n})
+//     // console.log(mult);
+// // level 2:
+//     // given an array of strings, concatiante them together 
+//     let concat = arrOfStrs.reduce(function(a,str){return a + str})
+//     // console.log(concat);
+// // level 3: 
+//     // given an array of arrays make them all into one array 
+//     arrOfArrs = [[1,2,3,4], [0,1,2,3,4,5], ['a','b','c','d','e','f'], ['g']]; // [1,2,3,4,0,1,2,3,4,5,'a','b','c','d','e','f','g']
+//     let oneArr = arrOfArrs.reduce(function(a, c){return a + ',' + c }).split(',');
+//     // console.log(oneArr);
+// // level 5:
+//     // given an array of strings, remove any vowels and concatenate them together 
+//     let concatNoVowels = arrOfStrs.reduce(function(a, str){return a + str.replace(/[AEIOU]/ig, '')}, '');
+//     console.log(concatNoVowels);
 
-// Level 3
-    // given an array of objects, filter out any that dont have a key called 'firstName'
+// // map questions
+// // level 0:
+//     // given an array of numbers, return a new array with all numbers multiplied by 2
+//     let double = arrOfNums.map(function(num){return num*2});
+//     // console.log(double);
 
-// reduce questions 
-// level 0:
-    // given an array of numbers add them all together
-
-// level 1:
-    // given an array of numbers, multiply them all together
-
-// level 2:
-    // given an array of strings, concatiante them together 
-
-// level 3: 
-    // given an array of arrays make them all into one array 
-
-// level 5:
-    // given an array of strings, remove any vowels and concatenate them toegher 
-
-
-// map questions
-// level 0:
-    // given an array of numbers, return a new array with all numbers multiplied by 2
-
-// level 1:
-    // given an array of numbers, return a new array with all numbers increased by 1
-
-// level 2:
-    // given an array of strings, return a new array with all strings as capitals
+// // level 1:
+//     // given an array of numbers, return a new array with all numbers increased by 1
+//     let plus1 = arrOfNums.map(function(num){return num+1});
+//     // console.log(plus1);
+// // level 2:
+//     // given an array of strings, return a new array with all strings as capitals
+//     let caps = arrOfStrs.map(function(str){return str.toUpperCase()});
+//     // console.log(caps);
