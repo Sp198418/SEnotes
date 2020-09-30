@@ -77,3 +77,76 @@
 //     // given an array of strings, return a new array with all strings as capitals
 //     let caps = arrOfStrs.map(function(str){return str.toUpperCase()});
 //     // console.log(caps);
+
+// Higher order exercises pt 2. No given Higher order function to use
+    
+// given an array of people objects, return only the females
+    // the object will look like this:  let sally = {name: 'Sally', age:55, gender: 'female'}
+
+//     var arrofpersons = [
+//       let preson1 =  {
+//             firstName: 'Alison',
+//             lastName: 'Smith',
+//             gender: 'female'
+//         },
+//        let person2 = {
+//             firstName: 'Jeff',
+//             lastName: 'Bezos',
+//             gender: 'male'
+
+//         },
+//         let person3 = {
+//             firstName: 'Mary',
+//             lastName: 'Milton',
+//             gender: 'female'
+//         }
+//     ]
+
+//    let females = arrofpersons.map((function(persons){return persons ['gender']=== 'female'}))
+
+//    console.log(females)
+
+
+
+// given an array of numbers, return an array without any even numbers
+
+// let nums = [1, 2, 3, 4]
+
+// let odds = nums.filter(n => n%2)
+
+// console.log(odds)
+
+// given an array of people objects, return an array with all ages
+    // the object will look like this: let sally = {name: 'Sally', age:55}
+    // part 2 find the average age of all people in the array (run a higher order function on your new array)
+    var arrofpersons = [
+                {
+                    firstName: 'Alison',
+                    lastName: 'Smith',
+                    gender: 'female',
+                    age: '45'
+                },
+                {
+                    firstName: 'Jeff',
+                    lastName: 'Bezos',
+                    gender: 'male',
+                    age: '30'
+        
+                },
+                {
+                    firstName: 'Mary',
+                    lastName: 'Milton',
+                    gender: 'female',
+                    age: '41'
+                }
+            ]
+
+            Let Personsages = arrofpersons.filter((arrofpersons) => return arrofpersons.age)
+
+        console.log(Personsages)
+
+// given an array of arrays, return an array of just the first elements of those inner arrays (only one array deep)
+
+// given an array of full names ('Sally Wadsworth') return the first and last initials
+
+// given an array of numbers find the largest number 
