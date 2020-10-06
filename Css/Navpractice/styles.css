@@ -1,0 +1,88 @@
+body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(130, 130, 163);
+    position: sticky;
+    top: 0;
+    padding-left: 40px;
+    
+
+}
+
+.navLeft{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.navRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navItem{
+    display:flex;
+    align-items: center;
+    font-weight:600;
+    font-size: 2.2em;
+    margin-right: 30px;
+    max-height:50px;
+}
+
+.navItem:hover{
+    font-size:2.5em;
+    max-height: 55px;
+    border-bottom:3px solid yellow;
+}
+
+.dropImg{
+    max-height: 25px;
+    transform: rotate(270deg);
+    transition: all .6s;
+}
+.navItem:hover > .dropImg{
+    transform:rotate(0deg)
+}
+
+.dropDown-content{
+    display:none;
+    position: absolute;
+    top: 60px;
+    min-width: 200px;
+    background-color: wheat;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+}
+
+.dropDown-content > a{
+    display:block;
+    text-align: left;
+}
+.dropTrigger:hover .dropDown-content{
+    display: block;
+}
+
+.dropDown-content a{
+    display:block;
+}
+
+
+
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
