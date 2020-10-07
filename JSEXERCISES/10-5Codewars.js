@@ -5,12 +5,12 @@
 // If the input array is empty or null, return an empty array.
 
 
-// function countPositivesSumNegatives(input) {
+//  function countPositivesSumNegatives(input) {
 
 //     if (input == null || input.length < 1){
-//         return [];
-//       }
-//     var newArray = [0, 0];
+//          return [];
+//      }
+// //     var newArray = [0, 0];
     
     
 //     for (var i = 0; i < input.length; i++){
@@ -34,25 +34,25 @@
 // Examples input/output:
 
 
-// function XO(str) {
-//     var x = [];
-//     var o = [];
-//     for (var i = 0; i < str.length; i++) {
+function XO(str) {
+    var x = [];
+    var o = [];
+    for (var i = 0; i < str.length; i++) {
      
-//         if (str[i].toLowerCase() === 'x') { 
-//             x.push(str[i]); 
-//         } else if (str[i].toLowerCase() === 'o') {
-//             o.push(str[i]);
-//         }
-//     }
+        if (str[i].toLowerCase() === 'x') { 
+            x.push(str[i]); 
+        } else if (str[i].toLowerCase() === 'o') {
+            o.push(str[i]);
+        }
+    }
    
-//     if (x.length == o.length) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-// console.log(XO('xo'));
-// console.log(XO('xxo'));
-// console.log(XO('xoX'));
-// console.log(XO('xoOX'));
+    if (x.length == o.length) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(XO('xo'));
+console.log(XO('xxo'));
+console.log(XO('xoX'));
+console.log(XO('xoOX'));
