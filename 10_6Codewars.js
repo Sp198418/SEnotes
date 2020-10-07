@@ -45,7 +45,7 @@
 //whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
 
 // function isIsogram(str){
-//     var i, j;
+    
 //     str = str.toLowerCase();
 //     for(i = 0; i < str.length; ++i) {
 //       for(j = i + 1; j < str.length; ++j) {
