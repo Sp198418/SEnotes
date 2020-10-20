@@ -91,3 +91,22 @@
 // }
 
 // console.log(solution(10))
+
+
+
+let toys = ['Hot Wheels', 'Drone', 'Doll'] 
+ function(spinWords){
+    coolToys = arr.filter => 
+    let fullString =  spinWords.length >= 5
+    return fullString.reverse()
+    
+
+ }
+ console.log(['Hot Wheels', 'Drone', 'Doll'])
+
+
+//  Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). 
+//  Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+
+
+function 
