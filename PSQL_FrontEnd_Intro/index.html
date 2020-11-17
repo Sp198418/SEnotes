@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletes Cards!</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h1> MY FIRST FULL STACK APP</h1>
+
+    <button onclick=addAthletes(event)> Add Athlete</button>
+    <br/>
+
+   <input id="name" placeholder="name" value=""/>
+   <input id="image" placeholder="image" value=""/>
+   <input id="jersey" placeholder="jersey" value=""/>
+   <input id="team" placeholder="team" value=""/>
+   <input id="position" placeholder="position" value=""/>
+  <br/>
+   
+   <br/>
+   <p>TO EDIT THE ATHLETE FILL IN THE EMPTY FIELDS WITH THE NUMBER ID.</p>
+   <button onclick=editAthlete(event) >Edit</button>
+   <input id="id" placeholder="ID" value=""/>
+   <hr/>
+
+    <button onclick=getAthletes(event) >Search</button>
+
+    <div id= 'allAthletes'></div>
+
+    <div id = "singleView">
+        <button id= 'closeButton' onclick=hidePopup(event)>X</button>
+    </div>
+
+    <script src= 'scripts.js'></script>
+</body>
+</html>

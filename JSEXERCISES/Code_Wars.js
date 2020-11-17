@@ -50,3 +50,26 @@
 // }
 
 // console.log(findSmallestInt(args))
+
+//Write a function that returns an array of numbers, fizz, & buzz, counting up to a given number
+//Given 15 return [1,2, fizz, 4, buzz,fizz]
+
+function countGame(n)  {
+    var count = 0
+    var arr = [];
+   for (var i =0; i <n;i++){
+       if(i %5 ==0 && i % 3){
+           arr.push('FizzBuzz');
+       }else if (i % 5 ==0){
+           arr.push('Buzz');
+       }else if (i % 3 ==0){
+           arr.push('Fizz');
+       }else{
+           arr.push(i);
+       }
+   }
+   return arr;
+
+}
+
+console.log(countGame(15))

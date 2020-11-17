@@ -1,0 +1,69 @@
+body{
+  background-image: url('https://onformative.com/assets/work/Nike_StrikeSeries_header.jpg');
+  background-attachment: fixed;
+  background-size: cover !important;
+  background-size: 100%;
+  color: white;l
+}
+
+.card {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border: 5px solid slateblue;
+    border-radius: 10px;
+    box-shadow: 2px 8px 10px 4px;
+    margin: 30px;
+    padding: 10px;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    background-size: cover;
+    transition: transform 450ms;
+  }
+  .card:hover{
+    box-shadow: 5px 5px 8px 8px white;
+    cursor: pointer;
+    transition: all .03s;
+    transform: scale(1.08);
+    }
+  
+  #allAthletes{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .delAthBut{
+    height: 30px;
+  }
+
+  #singleView{
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(22, 21, 21, 0.767);
+    width: 25%;
+    color: white;
+  }
+
+  #singleView img{
+    
+    max-width: 500px;
+  }
+
+  #closeButton{
+    position: absolute;
+    color: white;
+    background-color: red;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+  }
+
+  #closeButton:hover{
+    cursor: pointer;
+
+  }

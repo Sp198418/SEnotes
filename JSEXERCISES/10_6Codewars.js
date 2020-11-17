@@ -92,21 +92,81 @@
 
 // console.log(solution(10))
 
-
-
-let toys = ['Hot Wheels', 'Drone', 'Doll'] 
- function(spinWords){
-    coolToys = arr.filter => 
-    let fullString =  spinWords.length >= 5
-    return fullString.reverse()
-    
-
- }
- console.log(['Hot Wheels', 'Drone', 'Doll'])
-
-
 //  Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). 
 //  Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
 
+// let toys = ['Hot Wheels', 'Drone', 'Doll'] 
+//  function(spinWords){
+//     coolToys = arr.filter => 
+//     let fullString =  spinWords.length >= 5
+//     return fullString.reverse()
+    
 
-function 
+//  }
+//  console.log(['Hot Wheels', 'Drone', 'Doll'])
+
+
+//  Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+//  It should remove all values from list a, which are present in list b.
+
+
+// function arrayDiff(a, b) {
+
+// // loop through each element of array "a"
+//   for (let i = (a.length - 1); i >= 0; i--) {
+//     // for each element of array "a", loop through each element of array "b"
+//     for (let j = 0; j < b.length; j++) {
+//       if (a[i] === b[j]) {
+//          // if true, remove the element in array "a" at index "i" and only remove that "1" element
+//          a.splice(i, 1);
+//        }
+//      }
+//    }
+//    return a
+   
+//    }
+
+// console.log(arrayDiff([1,2,2,2,3,5],[2,5]))
+
+
+// Complete the solution so that it reverses the string passed into it.
+
+function solution(str){
+    let backwards = str.split("");
+
+ return backwards.reverse().join("")
+}
+
+console.log(solution('PARTYPACK'))
+
+
+// Let's play! You have to return which player won! In case of a draw return Draw!.
+
+const rps = (p1, p2) => {
+   let winner1 = "Player 1 Won!"
+   let winner2 = "Player 2 Won!"
+   let tie = "Draw"
+
+    if(p1 == 'rock' && p2 == 'scissors'){
+     return  winner1 
+
+    }else if(p1== 'scissors' && p2 == 'paper'){
+     return winner1
+
+     } else if(p1== 'paper' && p2 == 'rock'){
+      return winner1
+
+    }else if(p2== 'scissors' && p1 == 'paper'){
+     return winner2
+
+     } else if(p2== 'paper' && p1 == 'rock'){
+      return winner2
+
+      } else if (p2 == 'rock' && p1 == 'scissors'){
+      return winner2
+
+      } else if{
+          return tie
+      }
+    
+};
