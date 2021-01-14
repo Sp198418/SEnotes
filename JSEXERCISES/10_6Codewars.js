@@ -129,44 +129,76 @@
 // console.log(arrayDiff([1,2,2,2,3,5],[2,5]))
 
 
-// Complete the solution so that it reverses the string passed into it.
+// // Complete the solution so that it reverses the string passed into it.
 
-function solution(str){
-    let backwards = str.split("");
+// function solution(str){
+//     let backwards = str.split("");
 
- return backwards.reverse().join("")
-}
+//  return backwards.reverse().join("")
+// }
 
-console.log(solution('PARTYPACK'))
+// console.log(solution('PARTYPACK'))
 
 
-// Let's play! You have to return which player won! In case of a draw return Draw!.
+// // Let's play! You have to return which player won! In case of a draw return Draw!.
 
-const rps = (p1, p2) => {
-   let winner1 = "Player 1 Won!"
-   let winner2 = "Player 2 Won!"
-   let tie = "Draw"
+// const rps = (p1, p2) => {
+//    let winner1 = "Player 1 Won!"
+//    let winner2 = "Player 2 Won!"
+//    let tie = "Draw"
 
-    if(p1 == 'rock' && p2 == 'scissors'){
-     return  winner1 
+//     if(p1 == 'rock' && p2 == 'scissors'){
+//      return  winner1 
 
-    }else if(p1== 'scissors' && p2 == 'paper'){
-     return winner1
+//     }else if(p1== 'scissors' && p2 == 'paper'){
+//      return winner1
 
-     } else if(p1== 'paper' && p2 == 'rock'){
-      return winner1
+//      } else if(p1== 'paper' && p2 == 'rock'){
+//       return winner1
 
-    }else if(p2== 'scissors' && p1 == 'paper'){
-     return winner2
+//     }else if(p2== 'scissors' && p1 == 'paper'){
+//      return winner2
 
-     } else if(p2== 'paper' && p1 == 'rock'){
-      return winner2
+//      } else if(p2== 'paper' && p1 == 'rock'){
+//       return winner2
 
-      } else if (p2 == 'rock' && p1 == 'scissors'){
-      return winner2
+//       } else if (p2 == 'rock' && p1 == 'scissors'){
+//       return winner2
 
-      } else if{
-          return tie
-      }
+//       } else if{
+//           return tie
+//       }
     
-};
+// };
+
+// In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example,
+
+// 5! = 5 * 4 * 3 * 2 * 1 = 120.
+
+// const factorial = n => {
+//     let nextNumber = n - 1;
+//  console.log(n)
+//      if (nextNumber > 0){
+//         return factorial(nextNumber) * n;
+//      }else if (nextNumber == 0){
+//          return 1;
+//      }
+//   };
+
+//   console.log(factorial(5))
+
+//   const factorial = n => {
+//     return n > 0 ? n * factorial(n-1) : 1;
+//   }
+
+//   if(n==0){
+//       return 1;
+    
+//   }else if (n==1){
+//       return n
+//   }else if 
+
+// const factorial = n => {
+//     if (n == 0) return 1;
+//     return n * factorial(n-1);
+//   }
