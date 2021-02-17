@@ -1,6 +1,6 @@
 
 //   Write a function called repeat_str which repeats the given string src exactly count times
-  
+
 // function repeatStr (n, s) {
 //     var output = '';
 //     for(var i=0; i<n; i++){
@@ -14,7 +14,7 @@
 
 
 // function numberToString(num) {
-    
+
 //     return num.toString()
 //   }
 //   console.log(numberToString(55))
@@ -36,15 +36,15 @@
 // var args = [5, 6, 3, 34]
 
 // function findSmallestInt(args) {
-    
+
 //     var smallInt = args[0];
-    
+
 //     for(var i =0; i < args.length; i++){
-    
+
 //     if(args[i] <= smallInt){
 //     	smallInt = args[i];
 //     	}
-    
+
 //     } 
 //         return (smallInt)
 // }
@@ -90,9 +90,9 @@
 //     }else if (names.length > 3){
 //         return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
 //     }
-    
+
 // }
-  
+
 
 //   console.log(likes(["Max", "John", "Mark", "Sam","Jack", "Luke"]))
 //   console.log(likes(["Max", "John"]))
@@ -103,10 +103,10 @@
 // It should return true if the string is valid, and false if it's invalid.
 
 // function validBraces(braces){
-    
+
 //     for(let i = 0; i < braces.length;i++){
 //         if(brace[i] == '(' || braces[i] == '[' || braces[i] == '{'){
-            
+
 //         }
 //     } 
 //   }
@@ -152,19 +152,37 @@
 // Your task is to remove all consecutive duplicate words from a string, leaving only first words entries.
 
 
-const removeConsecutiveDuplicates = s => {
-   let removeWord = s.split(' ')
-   let acc = []
+// const removeConsecutiveDuplicates = s => {
+//    let removeWord = s.split(' ')
+//    let acc = []
 
-   for (let i = 0; i < removeWord.length; i++ ){
-         
-       
-         if (removeWord[i] !== removeWord[i + 1] ){
-           acc.push(removeWord[i])
-         }
-   }
-   return acc.join(" ")
+//    for (let i = 0; i < removeWord.length; i++ ){
 
+
+//          if (removeWord[i] !== removeWord[i + 1] ){
+//            acc.push(removeWord[i])
+//          }
+//    }
+//    return acc.join(" ")
+
+// }
+
+// console.log((removeConsecutiveDuplicates('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta')))
+
+// - Lost Without a Map
+
+// Given an array of integers, return a new array with each value doubled.
+
+function maps(x) {
+  let double = [];
+  for (let i = 0; i < x.length; i++) {
+    double.push(x[i] * 2);
+  }
+  return double;
 }
 
-console.log((removeConsecutiveDuplicates('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta')))
+console.log(maps([4,5,2]))
+
+
+
+

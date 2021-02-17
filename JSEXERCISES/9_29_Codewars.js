@@ -129,7 +129,7 @@
 
 // console.log(positiveSum([-1,2,3,4,-5]))
 
-function fixTheMeerkat(arr) {
-   return arr.reverse();
-   }
-console.log(fixTheMeerkat(["bottom", "middle", "top"]))
+// function fixTheMeerkat(arr) {
+//    return arr.reverse();
+//    }
+// console.log(fixTheMeerkat(["bottom", "middle", "top"]))
