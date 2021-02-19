@@ -185,13 +185,18 @@
 
 // Prefizzbuzz workout
 
-function preFizz(n) {
+// function preFizz(n) {
 
-  var output = [];
+//   var output = [];
 
-  for (let i = 1; i <= n; i++) {
-    output.push(i);
-  }
-  return output;
+//   for (let i = 1; i <= n; i++) {
+//     output.push(i);
+//   }
+//   return output;
+// }
+// console.log(preFizz(4))
+
+function multiply(x, y){
+return (x * y);
 }
-console.log(preFizz(4))
+console.log(multiply(5, 10))
