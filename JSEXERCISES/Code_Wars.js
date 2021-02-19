@@ -173,16 +173,25 @@
 
 // Given an array of integers, return a new array with each value doubled.
 
-function maps(x) {
-  let double = [];
-  for (let i = 0; i < x.length; i++) {
-    double.push(x[i] * 2);
+// function maps(x) {
+//   let double = [];
+//   for (let i = 0; i < x.length; i++) {
+//     double.push(x[i] * 2);
+//   }
+//   return double;
+// }
+
+// console.log(maps([4,5,2]))
+
+// Prefizzbuzz workout
+
+function preFizz(n) {
+
+  var output = [];
+
+  for (let i = 1; i <= n; i++) {
+    output.push(i);
   }
-  return double;
+  return output;
 }
-
-console.log(maps([4,5,2]))
-
-
-
-
+console.log(preFizz(4))
