@@ -196,7 +196,17 @@
 // }
 // console.log(preFizz(4))
 
-function multiply(x, y){
-return (x * y);
+// Function 3 - multiplying two numbers
+
+// function multiply(x, y){
+// return (x * y);
+// }
+// console.log(multiply(5, 10))
+
+// Is he gonna survive?
+
+function hero(bullets, dragons){
+   return bullets >= 2 * dragons;
 }
-console.log(multiply(5, 10))
+
+console.log(hero(100, 40))
