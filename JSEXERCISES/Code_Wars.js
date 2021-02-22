@@ -205,8 +205,15 @@
 
 // Is he gonna survive?
 
-function hero(bullets, dragons){
-   return bullets >= 2 * dragons;
-}
+// function hero(bullets, dragons){
+//    return bullets >= 2 * dragons;
+// }
 
-console.log(hero(100, 40))
+// console.log(hero(100, 40))
+
+// FIXME:BUGFIX
+
+// var replaceDots = function(str) {
+//    var str= 'one.two.three'
+//    return str.replace(/[.]/g, '-');
+//  }
