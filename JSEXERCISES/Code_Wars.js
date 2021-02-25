@@ -217,38 +217,52 @@
 //    var str= 'one.two.three'
 //    return str.replace(/[.]/g, '-');
 //  }
-function getDrinkByProfession(param)
-{
-param = param.toUpperCase();
-console.log(param);
-if(param == "JABRONI")
-{
-return "Patron Tequila";
-}else if( param == "SCHOOL COUNSELOR")
-{
-return "Anything with Alcohol";
-}else if(param == "PROGRAMMER")
-{
-return "Hipster Craft Beer";
-}else if(param == "BIKE GANG MEMBER")
-{
-return  "Moonshine" ;
-}else if(param == "POLITICIAN")
-{
-return  "Your tax dollars" ;
-}else if(param == "RAPPER")
-{
-return  "Cristal" ;
-}else if(param == 'PUNDIT')
-{
-return "Beer";
-}else if(param == "PUG")
-{
-return "Beer";
-}else
-{
-return "Beer";
-}
-}
+// function getDrinkByProfession(param)
+// {
+// param = param.toUpperCase();
+// console.log(param);
+// if(param == "JABRONI")
+// {
+// return "Patron Tequila";
+// }else if( param == "SCHOOL COUNSELOR")
+// {
+// return "Anything with Alcohol";
+// }else if(param == "PROGRAMMER")
+// {
+// return "Hipster Craft Beer";
+// }else if(param == "BIKE GANG MEMBER")
+// {
+// return  "Moonshine" ;
+// }else if(param == "POLITICIAN")
+// {
+// return  "Your tax dollars" ;
+// }else if(param == "RAPPER")
+// {
+// return  "Cristal" ;
+// }else if(param == 'PUNDIT')
+// {
+// return "Beer";
+// }else if(param == "PUG")
+// {
+// return "Beer";
+// }else
+// {
+// return "Beer";
+// }
+// }
 
-console.log(getDrinkByProfession("programmer"))
+// console.log(getDrinkByProfession("programmer"))
+
+function peopleWithAgeDrink(old) {
+    if (old < 14){
+        return 'drink toddy';
+    } else if(old < 18){
+        return 'drink coke';
+    }else if(old < 21 ){
+        return 'drink beer';
+    }else if(old >= 21){
+        return 'drink whisky';
+    }
+  };
+
+  console.log(peopleWithAgeDrink(55))
