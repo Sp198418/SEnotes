@@ -253,16 +253,57 @@
 
 // console.log(getDrinkByProfession("programmer"))
 
-function peopleWithAgeDrink(old) {
-    if (old < 14){
-        return 'drink toddy';
-    } else if(old < 18){
-        return 'drink coke';
-    }else if(old < 21 ){
-        return 'drink beer';
-    }else if(old >= 21){
-        return 'drink whisky';
-    }
-  };
+// function peopleWithAgeDrink(old) {
+//     if (old < 14){
+//         return 'drink toddy';
+//     } else if(old < 18){
+//         return 'drink coke';
+//     }else if(old < 21 ){
+//         return 'drink beer';
+//     }else if(old >= 21){
+//         return 'drink whisky';
+//     }
+//   };
 
-  console.log(peopleWithAgeDrink(55))
+//   console.log(peopleWithAgeDrink(55))
+
+//Checl exam
+
+function checkExam(array1, array2) {
+    var score = 0;
+      
+      for (var i = 0; i < array1.length; i++){
+      
+        if (array1[i] == array2[i]) {
+        
+        score += 4;
+        
+        }
+        
+        else if (array2[i] === ""){
+    
+          score += 0
+      
+        }
+        
+         
+        else {
+        
+        score -= 1
+        
+        }
+    
+      
+      }
+      
+      if (score < 0) {
+      
+        score = 0
+        
+      }  
+     
+     return score
+     
+    }
+
+    console.log(checkExam(["a", "b", "b", "c"], ["a", "b", "a", ""]  )) = 7
