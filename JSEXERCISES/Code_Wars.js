@@ -269,41 +269,53 @@
 
 //Checl exam
 
-function checkExam(array1, array2) {
-    var score = 0;
-      
-      for (var i = 0; i < array1.length; i++){
-      
-        if (array1[i] == array2[i]) {
-        
-        score += 4;
-        
-        }
-        
-        else if (array2[i] === ""){
-    
-          score += 0
-      
-        }
-        
-         
-        else {
-        
-        score -= 1
-        
-        }
-    
-      
-      }
-      
-      if (score < 0) {
-      
-        score = 0
-        
-      }  
-     
-     return score
-     
+// function checkExam(array1, array2) {
+//     var score = 0;
+
+//       for (var i = 0; i < array1.length; i++){
+
+//         if (array1[i] == array2[i]) {
+
+//         score += 4;
+
+//         }
+
+//         else if (array2[i] === ""){
+
+//           score += 0
+
+//         }
+
+
+//         else {
+
+//         score -= 1
+
+//         }
+
+
+//       }
+
+//       if (score < 0) {
+
+//         score = 0
+
+//       }  
+
+//      return score
+
+//     }
+
+//     console.log(checkExam(["a", "b", "b", "c"], ["a", "b", "a", ""]  )) = 7
+
+
+function detect(comment) {
+
+    var str = "Can someone explain";
+
+       return comment.startsWith(str);
+
     }
 
-    console.log(checkExam(["a", "b", "b", "c"], ["a", "b", "a", ""]  )) = 7
+
+console.log(detect('Can someone explain'))
