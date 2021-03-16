@@ -309,13 +309,15 @@
 //     console.log(checkExam(["a", "b", "b", "c"], ["a", "b", "a", ""]  )) = 7
 
 
-function detect(comment) {
+// function detect(comment) {
 
-    var str = "Can someone explain";
+//     var str = "Can someone explain";
 
-       return comment.startsWith(str);
+//        return comment.startsWith(str);
 
-    }
+//     }
 
 
-console.log(detect('Can someone explain'))
+// console.log(detect('Can someone explain'))
+
+

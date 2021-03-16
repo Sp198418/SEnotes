@@ -108,3 +108,36 @@
   
 // }
 // console.log(nbYear(1000, 2, 50, 1200))
+
+function Node(data){
+    this.data = data;
+    this.next = null
+}
+
+function LinkedList(){
+    this._length = 0;
+    this.head = null;
+}
+
+LinkedList.prototype.add = function(val){
+    var node = new Node(val);
+    // if there is no head 
+    // set node to head of list
+    if (!this.head){
+        this.head = node;
+        this._length += 1;
+        return node;
+    }
+    var current = this.head;
+    while (current.next){
+        current = current.next
+    }
+    current.next = node;
+    this._length += 1;
+    return node;
+}
+
+var sll = new LinkedList();
+sll.add(10);
+sll.add(12);
+console.log(sll);
