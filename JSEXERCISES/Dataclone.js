@@ -109,6 +109,8 @@
 // }
 // console.log(nbYear(1000, 2, 50, 1200))
 
+// Single linked list
+
 function Node(data){
     this.data = data;
     this.next = null
