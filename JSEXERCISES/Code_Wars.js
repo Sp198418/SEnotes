@@ -325,256 +325,273 @@
 
 // Remove all even integers
 
-function removeEven(arr) {
-    var odds = []
-    for (let number of arr) {
-        if (number % 2 != 0 ) // check if the item in the list is not even
-         odds.push(number)  // if it isn't even append it to the empty array
-    }
-    return odds
-}
+// function removeEven(arr) {
+//     var odds = []
+//     for (let number of arr) {
+//         if (number % 2 != 0 ) // check if the item in the list is not even
+//          odds.push(number)  // if it isn't even append it to the empty array
+//     }
+//     return odds
+// }
 
-console.log(removeEven([3, 5, 6, 45, 4, 63]))
+// console.log(removeEven([3, 5, 6, 45, 4, 63]))
 
 
 // Check for balanced parentheses
 
-let isMatchingBrackets = function (str) {
-    let stack = [];
-    let map = {
-        '(': ')',
-        '[': ']',
-        '{': '}'
-    }
+// let isMatchingBrackets = function (str) {
+//     let stack = [];
+//     let map = {
+//         '(': ')',
+//         '[': ']',
+//         '{': '}'
+//     }
 
-    for (let i = 0; i < str.length; i++) {
+//     for (let i = 0; i < str.length; i++) {
 
-        // If character is an opening brace add it to a stack
-        if (str[i] === '(' || str[i] === '{' || str[i] === '[' ) {
-            stack.push(str[i]);
-        }
-        //  If that character is a closing brace, pop from the stack, which will also reduce the length of the stack each time a closing bracket is encountered.
-        else {
-            let last = stack.pop();
+//         // If character is an opening brace add it to a stack
+//         if (str[i] === '(' || str[i] === '{' || str[i] === '[' ) {
+//             stack.push(str[i]);
+//         }
+//         //  If that character is a closing brace, pop from the stack, which will also reduce the length of the stack each time a closing bracket is encountered.
+//         else {
+//             let last = stack.pop();
 
-            //If the popped element from the stack, which is the last opening brace doesn’t match the corresponding closing brace in the map, then return false
-            if (str[i] !== map[last]) {return false};
-        }
-    }
-    // By the completion of the for loop after checking all the brackets of the str, at the end, if the stack is not empty then fail
-        if (stack.length !== 0) {return false};
+//             //If the popped element from the stack, which is the last opening brace doesn’t match the corresponding closing brace in the map, then return false
+//             if (str[i] !== map[last]) {return false};
+//         }
+//     }
+//     // By the completion of the for loop after checking all the brackets of the str, at the end, if the stack is not empty then fail
+//         if (stack.length !== 0) {return false};
 
-    return true;
-}
+//     return true;
+// }
 
-console.log(isMatchingBrackets("(){}")); // returns true
-
-
-// Queue: Generate Binary Numbers from 1 to n
+// console.log(isMatchingBrackets("(){}")); // returns true
 
 
-module.exports = class Queue {
-
-    constructor() {
-        this.items = [];
-        this.front = null;
-        this.back = null;
-
-    }
+// // Queue: Generate Binary Numbers from 1 to n
 
 
+// module.exports = class Queue {
 
-    isEmpty() {
-        return this.items.length == 0;
-    }
+//     constructor() {
+//         this.items = [];
+//         this.front = null;
+//         this.back = null;
 
-    getFront() {
-        if (this.items.length != 0) {
-            return this.items[0];
-        } else
-            return null;
-    }
-
-    size() {
-        return this.items.length;
-    }
-
-    enqueue(element) {
-        this.items.push(element);
-    }
+//     }
 
 
 
-    dequeue() {
-        if (this.items.length == 0) {
-            return null;
-        } else {
-            return this.items.shift();
+//     isEmpty() {
+//         return this.items.length == 0;
+//     }
 
-        }
-    }
-}
+//     getFront() {
+//         if (this.items.length != 0) {
+//             return this.items[0];
+//         } else
+//             return null;
+//     }
+
+//     size() {
+//         return this.items.length;
+//     }
+
+//     enqueue(element) {
+//         this.items.push(element);
+//     }
 
 
-// Linked List: Reverse Linked List
 
-"use strict";
-const Node = require('./Node.js');
+//     dequeue() {
+//         if (this.items.length == 0) {
+//             return null;
+//         } else {
+//             return this.items.shift();
 
-module.exports = class LinkedList {
-  constructor() {
-    this.head = null;
-  }
+//         }
+//     }
+// }
 
-  //Insertion At Head  
-  insertAtHead(newData) {
-    let tempNode = new Node(newData);
-    tempNode.nextElement = this.head;
-    this.head = tempNode;
-    return this; //returning the updated list
-  }
 
-  isEmpty() {
-    return (this.head == null);
-  }
+// // Linked List: Reverse Linked List
 
-  //function to print the linked list
-  printList() {
-    if (this.isEmpty()) {
-      console.log("Empty List");
-      return false;
-    } else {
-      let temp = this.head;
-      while (temp != null) {
-        process.stdout.write(String(temp.data));
-        process.stdout.write(" -> ");
-        temp = temp.nextElement;
-      }
-      console.log("null");
-      return true;
-    }
-  }
+// "use strict";
+// const Node = require('./Node.js');
 
-  getHead() {
-    return this.head;
-  }
-  setHead(newHead) {
-    this.head = newHead;
-    return this;
-  }
-  getListStr() {
-    if (this.isEmpty()) {
-      console.log("Empty List");
-      return "null";
-    } else {
-      let st = "";
-      let temp = this.head
-      while (temp != null) {
-        st += String(temp.data);
-        st += " -> ";
-        temp = temp.nextElement;
-      }
-      st += "null";
-      return st;
-    }
-  }
-  insertAtTail(newData) {
-    //Creating a new Node with data as newData
-    let node = new Node(newData);
+// module.exports = class LinkedList {
+//   constructor() {
+//     this.head = null;
+//   }
 
-    //check for case when list is empty
-    if (this.isEmpty()) {
-      //Needs to Insert the new node at Head
-      this.head = node;
-      return this;
-    }
+//   //Insertion At Head  
+//   insertAtHead(newData) {
+//     let tempNode = new Node(newData);
+//     tempNode.nextElement = this.head;
+//     this.head = tempNode;
+//     return this; //returning the updated list
+//   }
 
-    //Start from head
-    let currentNode = this.head;
+//   isEmpty() {
+//     return (this.head == null);
+//   }
 
-    //Iterate to the last element
-    while (currentNode.nextElement != null) {
-      currentNode = currentNode.nextElement;
-    }
+//   //function to print the linked list
+//   printList() {
+//     if (this.isEmpty()) {
+//       console.log("Empty List");
+//       return false;
+//     } else {
+//       let temp = this.head;
+//       while (temp != null) {
+//         process.stdout.write(String(temp.data));
+//         process.stdout.write(" -> ");
+//         temp = temp.nextElement;
+//       }
+//       console.log("null");
+//       return true;
+//     }
+//   }
 
-    //Make new node the nextElement of last node of list
-    currentNode.nextElement = node;
-    return this;
-  }
-  search(value) {
-    //Start from the first element
-    let currentNode = this.head;
+//   getHead() {
+//     return this.head;
+//   }
+//   setHead(newHead) {
+//     this.head = newHead;
+//     return this;
+//   }
+//   getListStr() {
+//     if (this.isEmpty()) {
+//       console.log("Empty List");
+//       return "null";
+//     } else {
+//       let st = "";
+//       let temp = this.head
+//       while (temp != null) {
+//         st += String(temp.data);
+//         st += " -> ";
+//         temp = temp.nextElement;
+//       }
+//       st += "null";
+//       return st;
+//     }
+//   }
+//   insertAtTail(newData) {
+//     //Creating a new Node with data as newData
+//     let node = new Node(newData);
 
-    //Traverse the list until you find the value or reach the end
-    while (currentNode != null) {
-      if (currentNode.data == value) {
-        return true; //value found
-      }
-      currentNode = currentNode.nextElement
-    }
-    return false; //value not found
-  }
-  deleteAtHead() {
-    //if list is empty, do nothing
-    if (this.isEmpty()) {
-      return this;
-    }
-    //Get the head and first element of the list
-    let firstElement = this.head;
+//     //check for case when list is empty
+//     if (this.isEmpty()) {
+//       //Needs to Insert the new node at Head
+//       this.head = node;
+//       return this;
+//     }
 
-    //If list is not empty, link head to the nextElement of firstElement
-    this.head = firstElement.nextElement;
+//     //Start from head
+//     let currentNode = this.head;
 
-    return this;
-  }
-  deleteVal(value) {
-    let deleted = null; //True or False
-    //Write code here
+//     //Iterate to the last element
+//     while (currentNode.nextElement != null) {
+//       currentNode = currentNode.nextElement;
+//     }
 
-    //if list is empty return false
-    if (this.isEmpty()) {
-      return false;
-    }
+//     //Make new node the nextElement of last node of list
+//     currentNode.nextElement = node;
+//     return this;
+//   }
+//   search(value) {
+//     //Start from the first element
+//     let currentNode = this.head;
 
-    //else get pointer to head
-    let currentNode = this.head;
-    // if first node's is the node to be deleted, delete it and return true
-    if (currentNode.data == value) {
-      this.head = currentNode.nextElement;
-      return true;
-    }
+//     //Traverse the list until you find the value or reach the end
+//     while (currentNode != null) {
+//       if (currentNode.data == value) {
+//         return true; //value found
+//       }
+//       currentNode = currentNode.nextElement
+//     }
+//     return false; //value not found
+//   }
+//   deleteAtHead() {
+//     //if list is empty, do nothing
+//     if (this.isEmpty()) {
+//       return this;
+//     }
+//     //Get the head and first element of the list
+//     let firstElement = this.head;
 
-    // else traverse the list
-    while (currentNode.nextElement != null) {
-      // if a node whose next node has the value as data, is found, delete it from the list and return true
-      if (currentNode.nextElement.data == value) {
-        currentNode.nextElement = currentNode.nextElement.nextElement;
-        return true;
-      }
-      currentNode = currentNode.nextElement;
-    }
-    //else node was not found, return false
-    deleted = false;
-    return deleted;
-  }
-  deleteAtTail() {
-    // check for the case when linked list is empty
-    if (this.isEmpty()) {
-      return this;
-    }
-    //if linked list is not empty, get the pointer to first node
-    let firstNode = this.head;
-    //check for the corner case when linked list has only one element
-    if (firstNode.nextElement == null) {
-      this.deleteAtHead();
-      return this;
-    }
-    //otherwise traverse to reach second last node
-    while (firstNode.nextElement.nextElement != null) {
-      firstNode = firstNode.nextElement;
-    }
-    //since you have reached second last node, just update its nextElement pointer to point at null, skipping the last node
-    firstNode.nextElement = null;
-    return this;
-  }
-}
+//     //If list is not empty, link head to the nextElement of firstElement
+//     this.head = firstElement.nextElement;
+
+//     return this;
+//   }
+//   deleteVal(value) {
+//     let deleted = null; //True or False
+//     //Write code here
+
+//     //if list is empty return false
+//     if (this.isEmpty()) {
+//       return false;
+//     }
+
+//     //else get pointer to head
+//     let currentNode = this.head;
+//     // if first node's is the node to be deleted, delete it and return true
+//     if (currentNode.data == value) {
+//       this.head = currentNode.nextElement;
+//       return true;
+//     }
+
+//     // else traverse the list
+//     while (currentNode.nextElement != null) {
+//       // if a node whose next node has the value as data, is found, delete it from the list and return true
+//       if (currentNode.nextElement.data == value) {
+//         currentNode.nextElement = currentNode.nextElement.nextElement;
+//         return true;
+//       }
+//       currentNode = currentNode.nextElement;
+//     }
+//     //else node was not found, return false
+//     deleted = false;
+//     return deleted;
+//   }
+//   deleteAtTail() {
+//     // check for the case when linked list is empty
+//     if (this.isEmpty()) {
+//       return this;
+//     }
+//     //if linked list is not empty, get the pointer to first node
+//     let firstNode = this.head;
+//     //check for the corner case when linked list has only one element
+//     if (firstNode.nextElement == null) {
+//       this.deleteAtHead();
+//       return this;
+//     }
+//     //otherwise traverse to reach second last node
+//     while (firstNode.nextElement.nextElement != null) {
+//       firstNode = firstNode.nextElement;
+//     }
+//     //since you have reached second last node, just update its nextElement pointer to point at null, skipping the last node
+//     firstNode.nextElement = null;
+//     return this;
+//   }
+// }
+
+let num = [1,2,3,5,6,7]
+// Find the missing number
+
+let ans = []
+//  num.forEach((n, i) => {
+ 
+//   if(n-1 !== i){
+//     console.log('hit')
+//    ans.push (i + 1);
+//    return
+//   }
+// } )
+
+num.forEach((n, i) => n-1 !== i ? ans.push(i + 1): null )
+
+console.log(ans[0])
